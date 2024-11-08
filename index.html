@@ -1,4 +1,163 @@
-DZIC LLC<BR><BR>
-  
-  Please leave us a message at 781-817-3942 and we will get back to you as soon as possible.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vital Influence</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    .navbar .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .navbar a.active {
+      color: #ffd700; /* Highlight color for the current page */
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: #fff;
+      padding: 5rem 1rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .content .box {
+      flex: 1 1 300px;
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .content .box h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      color: #333;
+    }
+    .content .box p {
+      color: #555;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html" class="brand">Vital Influence</a>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="medical.html">Medical</a>
+      <a href="it-services.html">IT Services</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about-contact.html">About / Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Welcome to Vital Influence</h1>
+    <p>Empowering your health and technology needs.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="content">
+      <div class="box">
+        <h2>Feature 1</h2>
+        <p>Describe an amazing feature here.</p>
+      </div>
+      <div class="box">
+        <h2>Feature 2</h2>
+        <p>Another fantastic feature goes here.</p>
+      </div>
+      <div class="box">
+        <h2>Feature 3</h2>
+        <p>Yet another feature you’ll love.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Vital Influence. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript to Highlight Current Page -->
+  <script>
+    // Highlight the current page in the navigation
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    navLinks.forEach(link => {
+      const linkPage = link.getAttribute("href");
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+</body>
+</html>
 
